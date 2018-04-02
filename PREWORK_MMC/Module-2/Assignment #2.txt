@@ -1,0 +1,22 @@
+Terms: 
+
+ReactJS - ReactJS basically is an open-source JavaScript library which is used for building user interfaces specifically for single page applications. It’s used for handling view layer for web and mobile apps. React also allows us to create reusable UI components. React was first created by Jordan Walke, a software engineer working for Facebook.
+
+AJAX - AJAX = Asynchronous JavaScript and XML. In short; AJAX is about loading data in the background and display it on the webpage, without reloading the whole page.
+
+PSD - A .PSD file is a layered image file used in Adobe PhotoShop. PSD, which stands for Photoshop Document, is the default format that Photoshop uses for saving data.  PSD is a proprietary file that allows the user to work with the images’ individual layers even after the file has been saved. 
+(I have little experience with Photoshop, so I didn't recognize the file type)
+
+Flexbox - The Flexible Box Module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities.
+
+SASS -  Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+
+Postgre-SQL - PostgreSQL is a powerful, open source object-relational database system. It has more than 15 years of active development and a proven architecture that has earned it a strong reputation for reliability, data integrity, and correctness. It runs on all major operating systems, including Linux, UNIX (AIX, BSD, HP-UX, macOS, Solaris), and Windows. It is fully ACID compliant, has full support for foreign keys, joins, views, triggers, and stored procedures (in multiple languages). It includes most SQL:2008 data types, including INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVAL, and TIMESTAMP. It also supports storage of binary large objects, including pictures, sounds, or video. It has native programming interfaces for C/C++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, among others, and exceptional documentation.
+
+Mocha - Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases.          
+
+NoSQL - NoSQL is a term used to describe high-performance, non-relational databases. NoSQL databases utilize a variety of data models, including document, graph, key-value, and columnar. NoSQL databases are widely recognized for ease of development, scalable performance, high availability, and resilience. Below are several resources to help you get started using NoSQL databases.
+
+CloudFoundry - Cloud Foundry is an open source cloud platform as a service (PaaS) on which developers can build, deploy, run and scale applications. VMware originally created Cloud Foundry, and it is now part of Pivotal Software, whose parent company is Dell Technologies.
+
+ManageWP - Manage WP is a WordPress management console (or dashboard) which comes in very handy to those who need to manage more than one WordPress site at a time. Regardless whether you’re in charge of 5,10, or 20 WordPress sites, this small plugin manages to complete all the meticulous tasks for you, automatically!
