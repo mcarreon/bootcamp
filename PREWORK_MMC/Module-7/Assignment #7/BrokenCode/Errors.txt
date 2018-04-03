@@ -1,0 +1,16 @@
+HTML Errors
+
+Layout, ie. indenting
+Ordering was off
+Fixed block of text into paragraphs
+Deleted Hijack module 
+Fixed non-href wiki link
+Fixed unclosed image link
+Fixed ordered list components by adding <li> 
+Added Javascript logic.js ref link
+
+Js Errors
+
+Added parentheses to each catFact
+Matched colors to function name
+Added parentheses to click paramater
