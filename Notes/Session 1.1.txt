@@ -1,0 +1,23 @@
+CMD Shell review
+cd ~
+ls
+    -a, shows all files, including files hidden by default
+pwd
+mkdir
+    creates new directory 
+    -p, allows for creation of embedded directories inside uncreated directories
+touch
+    creates new files 
+rm
+    removes a directory or file, 
+    -r, recursive, removes all things inside targetdir/ 
+rmdir
+    removes a directory, but only if it does not contain any files 
+cmd //c tree
+    equiv of mac tree command 
+explorer
+    opens target file 
+start 
+    starts target file 
+<cmd> --help 
+    equivalent of man on gitBash 
