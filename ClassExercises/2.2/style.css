@@ -1,0 +1,38 @@
+@keyframes hideFont {
+    from {color: white;}
+    to {color: black;}
+}
+
+.french {
+    font-family: 'IM Fell French Canon SC', serif;
+}
+
+.noto {
+    font-family: 'Noto Serif', serif;
+}
+
+.indie {
+    font-family: 'Indie Flower', cursive;
+}
+
+
+
+div {
+    background: white;
+    font-size: 3em;
+    color: white;
+    font-weight: lighter;
+    line-height: 2em;
+    letter-spacing: 2px;
+    transition: all 1s ease-in-out;
+}
+
+p:hover span {
+    animation-delay: 5s;
+}
+
+
+p:hover {
+    animation: hideFont 5s forwards;
+    animation-delay: 3s;
+}

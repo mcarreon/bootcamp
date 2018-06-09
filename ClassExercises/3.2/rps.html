@@ -1,0 +1,164 @@
+<!--
+show controls
+
+
+randint 0-2 
+r p s
+
+
+choose your r p s 
+
+
+
+
+counter 
+    wins
+    losses
+    ties
+-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors Part 2
+    </title>
+</head>
+
+<body>
+
+    <div id="game">
+        Hello, please press r, p, or s, to choose your move.
+        <br> Rock beats Scissors, Scissors beats Paper, Paper beats Rock.
+    </div>
+    <div>
+        Total Game Wins: <span id="totalWins">0</span>
+    </div>
+    <div>
+        Wins:
+        <span id="wins">0</span>
+    </div>
+    <div>
+        Losses:
+        <span id="losses">0</span>
+    </div>
+    <div>
+        Draw:
+        <span id="draws">0</span>
+    </div>
+
+    <script type="text/javascript">
+
+        // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+        var computerChoices = ["r", "p", "s"];
+
+        var userWins = document.getElementById("wins");
+        var userLosses = document.getElementById("losses");
+        var userDraw = document.getElementById("draws");
+        var userTotal = document.getElementById("totalWins");
+
+        var wins = 0;
+        var losses = 0;
+        var draws = 0;
+        var totalWins = 0;
+
+        // This function is run whenever the user presses a key.
+        document.onkeyup = function (event) {
+
+            // Determines which key was pressed.
+            var userGuess = event.key;
+
+            // Randomly chooses a choice from the options array. This is the Computer's guess.
+            var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+            // Alerts the key the user pressed (userGuess).
+            if (userGuess === 'r' || userGuess === 'p' || userGuess === 's') {
+                alert("User guess: " + userGuess);
+
+                // Alerts the Computer's guess.
+                alert("Computer guess: " + computerGuess);
+
+                if (userGuess === 'r' && computerGuess === 's') {
+                    alert("You Win!");
+                    wins++;
+                    userWins.textContent = wins;
+
+                    if (wins === 3) {
+                        alert("You won the game. ")
+                        wins = 0;
+                        losses = 0;
+                        draws = 0;
+                        totalWins++;
+                        userTotal.textContent = totalWins;
+                        userWins.textContent = wins;
+                        userLosses.textContent = losses;
+                        userDraw.textContent = draws;
+                    }
+                }
+                else if (userGuess === 'p' && computerGuess === 'r') {
+                    alert("You Win!");
+                    wins++;
+                    userWins.textContent = wins;
+
+                    if (wins === 3) {
+                        alert("You won the game. ")
+                        wins = 0;
+                        losses = 0;
+                        draws = 0;
+                        totalWins++;
+                        userTotal.textContent = totalWins;
+                        userWins.textContent = wins;
+                        userLosses.textContent = losses;
+                        userDraw.textContent = draws;
+                    }
+                }
+                else if (userGuess === 's' && computerGuess === 'p') {
+                    alert("You Win!");
+                    wins++;
+                    userWins.textContent = wins;
+
+                    if (wins === 3) {
+                        alert("You won the game. ")
+                        wins = 0;
+                        losses = 0;
+                        draws = 0;
+                        totalWins++;
+                        userTotal.textContent = totalWins;
+                        userWins.textContent = wins;
+                        userLosses.textContent = losses;
+                        userDraw.textContent = draws;
+                    }
+                }
+                else if (userGuess === computerGuess) {
+                    alert("DRAW!");
+                    draws++;
+                    userDraw.textContent = draws;
+                }
+                else {
+                    alert("You lose :(");
+                    losses++;
+                    userLosses.textContent = losses;
+
+                    if (losses === 3) {
+                        alert("You lost the game.")
+                        wins = 0;
+                        losses = 0;
+                        draws = 0;
+                        userWins.textContent = wins;
+                        userLosses.textContent = losses;
+                        userDraw.textContent = draws;
+                    }
+                }
+            }
+            else {
+                alert("Please put valid input.")
+            }
+
+
+        };
+    </script>
+
+</body>
+
+</html>

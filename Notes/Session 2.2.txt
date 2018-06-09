@@ -1,0 +1,6 @@
+Pseudo classes
+    keywords that can be added to selectors 
+        selects element states and applies changes
+    link to list of pseudos
+        https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+

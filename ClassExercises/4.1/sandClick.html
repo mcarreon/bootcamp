@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trigger Clicked</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <h1>Click to Eat Sandwich</h1>
+    <h3 id="pbj">Peanut Butter Jelly</h3>
+    <h3 id="grilledcheese">Grilled Cheese</h3>
+    <h3 id="roastbeef">Roast Beef</h3>
+
+    <script type="text/javascript">
+
+        // This document.ready isn't necessary in this example... but is needed in cases where the HTML is complex.
+        // This code makes sure that the JavaScript doesn't get run until the HTML is finished loading
+        // It's useful to become familiar with now.
+
+        $(document).ready(function () {
+
+            // VARIABLES
+            // ====================================================================
+            // Here we create variables for tracking the number of sandwiches eaten
+            // ...
+            var pbjCount = 0;
+            var grilledCheese = 0;
+            var roastBeef = 0;
+
+            // ...
+
+            // FUNCTIONS
+            // ====================================================================
+            // Here we create various on "click" functions which capture the clicks
+            // Inside each click event is the code to create an alert, update the counter, then show the updated count.
+            // ...
+            $('#pbj').on('click', function (event) {
+                pbjCount++;
+                alert("p to the b to the j");
+                alert("you've eaten: " + pbjCount + " Sandwiches." );
+
+
+            });
+            $('#grilledcheese').on('click', function (event) {
+                grilledCheese++;
+                alert("hope youre not lactose intolerant");
+                alert("you've eaten: " + grilledCheese + " Sandwiches." );
+
+            });
+            $('#roastbeef').on('click', function (event) {
+                roastBeef++;
+                alert("tasty roast beef");
+                alert("you've eaten: " + roastBeef + " Sandwiches." );
+            });
+
+
+            // ...
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+
+<!-- 
+event delegation: having one handler that deals with child elements 
+
+$('body').on('click', target, function(){}).on('click', target2, function(){}).on('click', target3, function(){})
+
+
+
+-->

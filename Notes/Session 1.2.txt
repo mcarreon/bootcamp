@@ -1,0 +1,38 @@
+git add
+    adds file to be commited
+git status
+git commit
+    -m adds message to commit
+git branch
+    -v, shows where commit is at
+    -vv, very verbose? shows remote and relation to it
+git push 
+    pushes changes to origin 
+git revert <hash>
+    undos the changes tied to a specific hash 
+
+HTML
+Common UI Form Elements: 
+    <form>
+        form section
+    <input> 
+        input boxes
+    <label> 
+        lavel for boxes
+    <button>
+        btn?
+    <textarea> 
+        large textbox
+
+CSS Styling 
+    For styling, lean towards using a class specifier
+    For very specific unique elements, use ID
+        recommended to leave IDs out of style sheets
+        ID styling will override class
+
+padding 
+    space between element and its outer border 
+margin
+    element and surrounding 
+float
+    takes the element out of the flow of the document 

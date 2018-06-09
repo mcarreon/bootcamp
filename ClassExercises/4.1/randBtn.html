@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trigger Random</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+
+  <div class="jumbotron">
+
+    <h1 class="text-center">Generate a Random Number!</h1>
+
+    <div class="text-center">
+
+      <!-- Here we have our button for generating random numbers (#random-button) -->
+      <button id="random-button" class="btn btn-primary btn-lg"><h1><span class="fa fa-question"></span></h1></button>
+      <button id="clear-button" class="btn btn-primary btn-lg"><h1><span class="fa fa-question" style="color: white"> CLEAR</span></h1></button>
+    </div>
+  </div>
+
+  <h2 class="text-center" id="rand-int"></h2>
+  <div class="text-center">Previous random integers: <span id="prev-ints"></span></div>
+
+  <!-- Here we have div called "random-number" where our random number will go -->
+  <h1 class="text-center" id="random-number"></h1>
+
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+
+      // CREATE THE MISSING CODE HERE. Your code should add content to the random-number div.
+      // ...
+        var randInt;
+        var prevInts = [];
+        $('#random-button').on('click', function (event) {
+            randInt = Math.floor((Math.random() * 1000) + 1);
+            $('#rand-int').text(randInt);
+            prevInts.push(' ' + randInt);
+            $('#prev-ints').text(prevInts);
+        });
+        $('#clear-button').on('click', function (event) {
+            prevInts = [];
+            $('#prev-ints').text(prevInts);
+        })
+
+      // ...
+
+    });
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    var decision = confirm("Would you like to eat steak?");
+    var age = prompt("What is your age?")
+
+    if (decision && age >= 21) {
+        document.write("Here's a Steak Sandwich and your beer!");
+        document.write('<img src="https://www.kingsford.com/wp-content/uploads/2014/11/kfd-hoetosteak-Steak_4_0323-1024x621.jpg" width="512" height="310.5" >')
+        document.write('<img src="https://www.maxim.com/.image/t_share/MTQ2ODUxNjY1ODIyMDk4OTgw/two-pints-beer-main.jpg" width="576" height="384">')
+    }
+    else if (decision) {
+        document.write("Here's a Steak Sandwich!");
+        document.write('<img src="https://www.kingsford.com/wp-content/uploads/2014/11/kfd-hoetosteak-Steak_4_0323-1024x621.jpg" width="512" height="310.5" >')
+    }
+    else {
+        document.write("Here's a Tofu Stir-Fry!");
+    }
+
+</script>
+</body>
+</html>

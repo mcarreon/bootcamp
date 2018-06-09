@@ -1,0 +1,31 @@
+Heroes os CS 
+
+Relative File Paths
+
+Box Model
+    total element width consists off
+        width + r l border + r l margin + r l padding 
+    total height works the same way
+    From outside in 
+        margin, border, padding,
+
+Float
+    block level elements take entire line
+        can be floated 
+    floats can also cause problems 
+        when element overflows outside of its container 
+            use "clearfix hack"
+
+clearfix
+    have to define it first
+    class="clearfix" put in container
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+    ::after is a pseudo-element
+    adds a hidden HTML element after the .clearfix element 
+        clears the float 

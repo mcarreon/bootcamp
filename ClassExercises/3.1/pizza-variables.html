@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pizza Variables - Unsolved</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+    // Instructions:
+    // Create 3 variables. One called: "name", one called "pizzaCount", and one called "isHungry".
+    // The name variable should be set to your name.
+    // The pizzaCount variable should be set to a number.
+    // The isHungry variable should be set to true or false.
+
+    // FILL IN YOUR CODE HERE
+    // =============================================
+    var name = "Marlo Carreon";
+    var pizzaCount = 0;
+    var isHungry = true;
+    var pizzaPrice = Math.floor(Math.random() * 21);
+
+    // ==============================================
+
+    console.log("Welcome: " + name);
+
+    console.log(`Pizzas cost $${pizzaPrice} each`);
+
+    pizzaCount = prompt("How many pizzas do you want?");
+
+    // Don't touch this code :-)
+    var preCost = pizzaCount * pizzaPrice;
+    var cheeseType = confirm("Do you want bacon on your pizza?");
+    var cheese = confirm("Bacon costs $1.50 extra.");
+    var totalCost = 0;
+
+    console.log("Your sub-total is: $" + preCost);
+
+    if (cheeseType === true) {
+        total = preCost + 1;
+    }
+
+    console.log("Your total is: $" + total);
+
+    if (totalCost >= 10) {
+        console.log("Pizzas cost too much :(");
+        console.log("Still Hungry: " + isHungry);
+        }
+    else {
+        isHungry = false;
+        console.log("Still Hungry: " + isHungry);
+    }
+   
+    </script>
+
+  </body>
+</html>

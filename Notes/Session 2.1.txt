@@ -1,0 +1,13 @@
+Difference between section and div?
+    section was brought in by html 5
+    section only works with html5
+        try to use sections for specific content, and div for everything else
+    div logical separator
+
+Loading Multiple CSS Files 
+    loading order matters
+        second style sheet overrides the first style sheet in case of conflict
+    in cases like div .class {} in one sheet and .class {} in the other
+        div .class {} overrides due to specificity
+
+CSS Reset
