@@ -1,0 +1,51 @@
+jquery game
+
+variables needed 
+        user pokemon
+        enemy pokemon 
+        game controller 
+
+logic
+starting phase
+    pick out of 3 char
+        name your pick 
+    enemy trainer pokemon populated from list of random pokemon
+        assign random name to trainer 
+during battle phase
+    player char has 4 options
+        basic attack
+        weak speed attack with life leech
+        element based attack
+        attack/dodge/defense increase 
+    if player pokemon faints
+        give option to continue or reset
+            on continue - half score 
+            on reset - restart game
+
+    enemy char has 6 pokemon
+        each one has 2 options
+            basic attack
+            element based attack 
+        after each enemy pokemon is defeated, 
+            pick random pokemon as next enemy 
+
+    during actual attacking
+        basic attack 
+            roll for miss 
+            roll attack power
+            roll crit
+        weak speed attack with life leech
+            roll for miss
+            roll for attack power
+                roll healing based off of attack power  
+        element based attack 
+            roll for miss
+            check enemy element type
+            roll for crit 
+
+        attack/dodge/defense increase 
+            check element 
+                fire - attack 
+                water - dodge
+                grass - defense  
+after battle 

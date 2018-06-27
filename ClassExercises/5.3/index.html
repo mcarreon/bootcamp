@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var cards = [];
+        for (var i = 0; i < 51; i++) {
+            if (i <= 13) {
+                var card = {
+                    suit: 'spade',
+                    number: i
+                }
+                cards.push(card);
+            }
+            else if (13 < i && i <= 26) {
+                var card = {
+                    suit: 'clubs',
+                    number: i
+                }
+                cards.push(card);
+                
+            }
+            else if ( 26 < i && i <= 39) {
+                var card = {
+                    suit: 'diamonds',
+                    number: i
+                }
+                cards.push(card);
+            }
+            else if ( 39 < i && i <= 51) {
+                var card = {
+                    suit: 'hearts',
+                    number: i
+                }
+                cards.push(card);
+            }
+            
+        }
+          
+        var it = 1;
+        while (it < 101) {
+            (it % 15 === 0) ? (console.log('fizzbuzz')) : (it % 3 === 0) ? (console.log('fizz')) : (it % 5 === 0) ? (console.log('buzz')) : (console.log(it));     
+            it++;
+        }
+    
+    </script>
+    
+</body>
+</html>
