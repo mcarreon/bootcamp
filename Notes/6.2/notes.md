@@ -1,12 +1,19 @@
-#AJAX methods: 
+# AJAX methods
 
-GET 
+GET
+
 ex. code
+
 ```javascript
+
     $.ajax({url: queryURL, method: 'GET'}).done(function(response) {
         console.log(response);
     });
+
 ```
+
 POST
+
 PUT
+
 DELETE
